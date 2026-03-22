@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SECRET_KEY=change-me-in-production
+      - DJANGO_DEBUG=True
+      - ALLOWED_HOSTS=*
+      - NOMINATIM_USER_AGENT=FuelRouteAPI/1.0 (you@example.com)
+    volumes:
+      - .:/app
+    restart: unless-stopped
