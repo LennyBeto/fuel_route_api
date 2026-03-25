@@ -86,7 +86,7 @@ NOMINATIM_BASE_URL = os.environ.get(
     "NOMINATIM_BASE_URL", "https://nominatim.openstreetmap.org"
 )
 NOMINATIM_USER_AGENT = os.environ.get(
-    "NOMINATIM_USER_AGENT", "FuelRouteAPI/1.0 (contact@example.com)"
+    "NOMINATIM_USER_AGENT", "FuelRouteAPI/1.0 (lennybeto.lb@gmail.com)"
 )
  
 # Vehicle parameters (can be overridden per-request but these are defaults)

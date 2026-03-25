@@ -73,6 +73,10 @@ def stations_info(request: Request) -> Response:
 
 @api_view(["POST"])
 def get_route(request: Request) -> Response:
+    print("METHOD:", request.method)        
+    print("DATA:", request.data)            
+    print("CONTENT TYPE:", request.content_type) 
+
     """
     Plan an optimal fuel-stop route between two US locations.
 
